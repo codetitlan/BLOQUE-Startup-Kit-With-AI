@@ -26,8 +26,9 @@ Co-Founder of Codetitlan and 3erEspacio
 AI expert with 20+ years in software, product, and applied AI
 
 - Contact link: https://tinyurl.com/46jxyde5
-- Instagram QR: `workshop/qr-ig.png`
-- WhatsApp QR: `workshop/qr-wa.png`
+
+Instagram QR  
+![Instagram QR](workshop/qr-ig.png)
 
 ## Notes
 
