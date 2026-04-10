@@ -25,8 +25,6 @@ Ed Mosqueda
 Co-Founder of Codetitlan and 3erEspacio  
 AI expert with 20+ years in software, product, and applied AI
 
-- Contact link: https://tinyurl.com/46jxyde5
-
 Instagram QR  
 <img src="workshop/qr-ig.png" alt="Instagram QR" width="220" />
 
