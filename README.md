@@ -28,7 +28,7 @@ AI expert with 20+ years in software, product, and applied AI
 - Contact link: https://tinyurl.com/46jxyde5
 
 Instagram QR  
-![Instagram QR](workshop/qr-ig.png)
+<img src="workshop/qr-ig.png" alt="Instagram QR" width="220" />
 
 ## Notes
 
