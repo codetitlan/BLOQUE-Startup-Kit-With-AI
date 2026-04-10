@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller IA + Pitch Deck</title>
+    <link rel="stylesheet" href="./deck.es.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="topbar__brand">
+          <span class="brand-mark"></span>
+          <div>
+            <p class="eyebrow">Workshop Deck</p>
+            <h1>Cómo usar agentes de IA para crear un pitch deck sólido</h1>
+          </div>
+        </div>
+        <div class="topbar__meta">
+          <button class="ghost-button" id="toggle-notes" type="button">Notas: ocultas</button>
+          <span id="slide-counter">01 / 18</span>
+        </div>
+      </header>
+
+      <main class="deck" id="deck">
+        <section class="slide slide--hero is-active" data-slide="1" data-title="Título">
+          <div class="slide__content hero">
+            <div class="hero__copy">
+              <p class="eyebrow eyebrow--accent">Taller de 1 hora · Startups en incubación</p>
+              <h2>Cómo usar agentes de IA para crear un pitch deck sólido</h2>
+              <p class="hero__lead">
+                Un método práctico para pasar de notas desordenadas a un deck claro, creíble y útil.
+              </p>
+              <div class="pill-row">
+                <span class="pill">claridad</span>
+                <span class="pill">evidencia</span>
+                <span class="pill">velocidad</span>
+              </div>
+            </div>
+            <div class="hero__visual visual-card visual-card--network">
+              <div class="network-node network-node--a"></div>
+              <div class="network-node network-node--b"></div>
+              <div class="network-node network-node--c"></div>
+              <div class="network-node network-node--d"></div>
+              <div class="network-line network-line--1"></div>
+              <div class="network-line network-line--2"></div>
+              <div class="network-line network-line--3"></div>
+              <div class="visual-caption">IA + criterio fundador</div>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Abrir con una expectativa simple: no vamos a automatizar fundraising.</li>
+              <li>El objetivo es aprender un proceso para pasar de notas desordenadas a un deck inicial útil.</li>
+              <li>El foco está en narrativa, claridad y criterio.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--dark" data-slide="2" data-title="Resultado esperado">
+          <div class="slide__content">
+            <div class="section-head">
+              <p class="eyebrow">Resultado esperado</p>
+              <h2>Hoy se llevan</h2>
+            </div>
+            <div class="card-grid card-grid--four">
+              <article class="info-card">
+                <span class="info-card__icon">↗</span>
+                <h3>Flujo práctico</h3>
+                <p>Un proceso simple para trabajar con agentes de IA.</p>
+              </article>
+              <article class="info-card">
+                <span class="info-card__icon">▣</span>
+                <h3>Outline inicial</h3>
+                <p>Una base real de 10–12 diapositivas.</p>
+              </article>
+              <article class="info-card">
+                <span class="info-card__icon">◎</span>
+                <h3>Crítica útil</h3>
+                <p>Un filtro para detectar vaguedad y exageración.</p>
+              </article>
+              <article class="info-card">
+                <span class="info-card__icon">✦</span>
+                <h3>Prompts reutilizables</h3>
+                <p>Una secuencia que podrán usar después del taller.</p>
+              </article>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>El entregable real no es solo el deck.</li>
+              <li>También se llevan un método repetible para trabajar con IA.</li>
+              <li>Reforzar que la IA acelera, pero el fundador sigue siendo responsable de la verdad del negocio.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--split" data-slide="3" data-title="Idea central">
+          <div class="slide__content split-layout split-layout--balanced">
+            <div>
+              <p class="eyebrow">Idea central</p>
+              <h2>La IA no reemplaza el criterio del fundador</h2>
+              <p class="lead">
+                La IA ayuda a estructurar, sintetizar, criticar y reescribir. La verdad del negocio sigue siendo responsabilidad del equipo fundador.
+              </p>
+            </div>
+            <div class="comparison">
+              <div class="comparison__card">
+                <span class="comparison__icon">◐</span>
+                <h3>Fundador</h3>
+                <ul>
+                  <li>Conoce al cliente</li>
+                  <li>Entiende el problema</li>
+                  <li>Toma decisiones</li>
+                </ul>
+              </div>
+              <div class="comparison__bridge">+</div>
+              <div class="comparison__card">
+                <span class="comparison__icon">◈</span>
+                <h3>Agente IA</h3>
+                <ul>
+                  <li>Ordena el contexto</li>
+                  <li>Propone variantes</li>
+                  <li>Detecta vacíos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Esta diapositiva marca el tono del taller.</li>
+              <li>Si alguien espera un atajo total, corregir esa expectativa aquí.</li>
+              <li>Frase útil: “La IA escribe rápido; el fundador decide qué es verdad.”</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--light" data-slide="4" data-title="Preguntas clave">
+          <div class="slide__content">
+            <div class="section-head">
+              <p class="eyebrow">Qué debe resolver un deck</p>
+              <h2>Un deck temprano debe responder preguntas simples</h2>
+            </div>
+            <div class="question-grid">
+              <article class="question-card"><span>01</span><p>¿Qué problema existe?</p></article>
+              <article class="question-card"><span>02</span><p>¿Para quién?</p></article>
+              <article class="question-card"><span>03</span><p>¿Por qué ahora?</p></article>
+              <article class="question-card"><span>04</span><p>¿Qué evidencia hay?</p></article>
+              <article class="question-card"><span>05</span><p>¿Por qué este equipo?</p></article>
+              <article class="question-card"><span>06</span><p>¿Qué necesitan?</p></article>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Mantener la conversación en el nivel de decisiones e historia.</li>
+              <li>No entrar todavía en diseño o formato.</li>
+              <li>Explicar que muchos decks fallan porque responden con slogans, no con hechos.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--dark" data-slide="5" data-title="Estructura">
+          <div class="slide__content">
+            <div class="section-head">
+              <p class="eyebrow">Mapa del deck</p>
+              <h2>Estructura recomendada</h2>
+            </div>
+            <div class="timeline">
+              <div class="timeline__group">
+                <h3>Historia</h3>
+                <ol>
+                  <li>Portada</li>
+                  <li>Problema</li>
+                  <li>Cliente / mercado</li>
+                  <li>Solución</li>
+                </ol>
+              </div>
+              <div class="timeline__group">
+                <h3>Prueba</h3>
+                <ol start="5">
+                  <li>Producto</li>
+                  <li>Modelo</li>
+                  <li>Tracción</li>
+                  <li>Competencia</li>
+                </ol>
+              </div>
+              <div class="timeline__group">
+                <h3>Ejecución</h3>
+                <ol start="9">
+                  <li>Go-to-market</li>
+                  <li>Equipo</li>
+                  <li>Roadmap</li>
+                  <li>Ask</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Presentar esto como base, no como una ley rígida.</li>
+              <li>El orden puede cambiar si la historia lo justifica.</li>
+              <li>Lo importante es cubrir las preguntas clave sin meter relleno.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide" data-slide="6" data-title="Roles">
+          <div class="slide__content">
+            <div class="section-head">
+              <p class="eyebrow">Roles de agentes</p>
+              <h2>Cuatro roles útiles</h2>
+            </div>
+            <div class="card-grid card-grid--four">
+              <article class="role-card"><span>⌕</span><h3>Analista</h3><p>Extrae hechos, supuestos y vacíos.</p></article>
+              <article class="role-card"><span>⌁</span><h3>Estratega</h3><p>Propone maneras de contar la historia.</p></article>
+              <article class="role-card"><span>?</span><h3>Inversionista escéptico</h3><p>Presiona donde el deck es débil.</p></article>
+              <article class="role-card"><span>✎</span><h3>Editor</h3><p>Reescribe para mayor claridad y precisión.</p></article>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>“Usar IA” no es una sola cosa.</li>
+              <li>Lo útil es asignar un rol claro a cada interacción.</li>
+              <li>Eso baja la probabilidad de obtener respuestas genéricas.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--split slide--light" data-slide="7" data-title="Insumos">
+          <div class="slide__content split-layout">
+            <div>
+              <p class="eyebrow">Insumos mínimos</p>
+              <h2>Sin contexto, el deck sale genérico</h2>
+              <ul class="bullet-list bullet-list--compact">
+                <li>startup</li>
+                <li>cliente</li>
+                <li>problema</li>
+                <li>solución</li>
+                <li>por qué ahora</li>
+                <li>modelo</li>
+                <li>evidencia</li>
+                <li>incógnitas</li>
+              </ul>
+            </div>
+            <div class="flow-card">
+              <div class="flow-pill">Inputs</div>
+              <div class="flow-stack">
+                <span>Notas</span>
+                <span>Hechos</span>
+                <span>Hipótesis</span>
+              </div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-pill flow-pill--accent">Output</div>
+              <div class="flow-output">Deck más específico y menos genérico</div>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>No se necesita tener todo resuelto.</li>
+              <li>Sí se necesita honestidad sobre lo que se sabe y lo que sigue siendo hipótesis.</li>
+              <li>Si una startup aún no tiene tracción, puede usar entrevistas, pilotos o aprendizajes tempranos.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--dark" data-slide="8" data-title="Flujo">
+          <div class="slide__content">
+            <div class="section-head">
+              <p class="eyebrow">Flujo de trabajo</p>
+              <h2>Secuencia recomendada</h2>
+            </div>
+            <div class="process-flow">
+              <div class="process-step"><span>1</span><p>Contexto</p></div>
+              <div class="process-step"><span>2</span><p>Hechos y vacíos</p></div>
+              <div class="process-step"><span>3</span><p>Narrativas</p></div>
+              <div class="process-step"><span>4</span><p>Outline</p></div>
+              <div class="process-step"><span>5</span><p>Crítica</p></div>
+              <div class="process-step"><span>6</span><p>Reescritura</p></div>
+              <div class="process-step"><span>7</span><p>Copy</p></div>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Esta es la columna vertebral del taller.</li>
+              <li>Explicar que no se trata de pedir “hazme un deck”.</li>
+              <li>Se trata de dividir el trabajo en pasos para mejorar la calidad del resultado.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--split" data-slide="9" data-title="Demo">
+          <div class="slide__content split-layout">
+            <div>
+              <p class="eyebrow">Demo en vivo</p>
+              <h2>Qué vamos a hacer en la demostración</h2>
+              <ul class="bullet-list">
+                <li>Pasar de notas iniciales a resumen claro</li>
+                <li>Generar el outline del deck</li>
+                <li>Detectar las 3 diapositivas más débiles</li>
+                <li>Mejorarlas con crítica y reescritura</li>
+              </ul>
+            </div>
+            <div class="mockup-window">
+              <div class="mockup-window__bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mockup-window__body">
+                <div class="mockup-chat">
+                  <div class="bubble bubble--user">Notas iniciales de la startup</div>
+                  <div class="bubble bubble--ai">Resumen · vacíos · narrativa</div>
+                </div>
+                <div class="mockup-outline">
+                  <div>01 Portada</div>
+                  <div>02 Problema</div>
+                  <div>03 Cliente</div>
+                  <div>04 Solución</div>
+                  <div class="is-highlight">05 Tracción necesita evidencia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Preparar el ejemplo con antelación para no perder tiempo.</li>
+              <li>El objetivo no es admirar la salida del modelo.</li>
+              <li>El objetivo es revisarla con rigor.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--light" data-slide="10" data-title="Caso RutaFlow">
+          <div class="slide__content">
+            <div class="section-head">
+              <p class="eyebrow">Caso de ejemplo</p>
+              <h2>RutaFlow</h2>
+            </div>
+            <div class="startup-card">
+              <div class="startup-card__top">
+                <div>
+                  <p class="startup-card__label">Startup ejemplo</p>
+                  <h3>Software ligero para operaciones logísticas</h3>
+                </div>
+                <div class="metric-chip">18 pilotos · 40 entrevistas</div>
+              </div>
+              <div class="startup-grid">
+                <article><h4>Cliente</h4><p>Pequeñas empresas urbanas de logística.</p></article>
+                <article><h4>Problema</h4><p>Despacho coordinado con WhatsApp, llamadas y Excel.</p></article>
+                <article><h4>Modelo</h4><p>SaaS por vehículos activos.</p></article>
+                <article><h4>Riesgo</h4><p>Retención y disposición a pagar aún abiertas.</p></article>
+              </div>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Este caso permite mostrar algo concreto sin entrar en complejidad excesiva.</li>
+              <li>Señalar claramente dónde hay evidencia y dónde todavía hay incertidumbre.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--dark" data-slide="11" data-title="Revisión crítica">
+          <div class="slide__content">
+            <div class="section-head">
+              <p class="eyebrow">Qué revisar en la salida</p>
+              <h2>No acepten el primer borrador</h2>
+            </div>
+            <div class="checklist">
+              <article><span>✓</span><p>¿Hay evidencia detrás de cada afirmación?</p></article>
+              <article><span>✓</span><p>¿Hay lenguaje demasiado genérico?</p></article>
+              <article><span>✓</span><p>¿La IA exageró certeza?</p></article>
+              <article><span>✓</span><p>¿La lógica general del deck se sostiene?</p></article>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Esta diapositiva enseña criterio.</li>
+              <li>Una respuesta bien escrita puede seguir estando equivocada o vacía.</li>
+              <li>Lo que buscamos no es texto bonito, sino una historia defendible.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide" data-slide="12" data-title="Errores">
+          <div class="slide__content">
+            <div class="section-head">
+              <p class="eyebrow">Errores típicos</p>
+              <h2>Fallas comunes en decks generados con IA</h2>
+            </div>
+            <div class="card-grid card-grid--three">
+              <article class="warning-card"><h3>Problema genérico</h3><p>“Las empresas necesitan digitalizarse”.</p></article>
+              <article class="warning-card"><h3>Solución-eslogan</h3><p>Mucho adjetivo, poca sustancia.</p></article>
+              <article class="warning-card"><h3>Tracción inflada</h3><p>Actividad presentada como prueba.</p></article>
+              <article class="warning-card"><h3>Competencia ingenua</h3><p>Ignora alternativas reales.</p></article>
+              <article class="warning-card"><h3>TAM irrelevante</h3><p>Muy grande, poco útil para empezar.</p></article>
+              <article class="warning-card"><h3>Equipo sin ajuste</h3><p>CV fuerte, founder-market fit débil.</p></article>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Leer al menos dos ejemplos en voz alta y explicar por qué fallan.</li>
+              <li>Si el grupo responde bien, pedir que identifiquen cuál error aparece más en sus propios decks.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--light" data-slide="13" data-title="Regla">
+          <div class="slide__content">
+            <div class="section-head">
+              <p class="eyebrow">Regla simple</p>
+              <h2>Afirmación → Evidencia → Implicación</h2>
+            </div>
+            <div class="triptych">
+              <article class="triptych__card">
+                <span>1</span>
+                <h3>Afirmación</h3>
+                <p>Qué estás diciendo.</p>
+              </article>
+              <article class="triptych__card">
+                <span>2</span>
+                <h3>Evidencia</h3>
+                <p>Por qué deberían creerte.</p>
+              </article>
+              <article class="triptych__card">
+                <span>3</span>
+                <h3>Implicación</h3>
+                <p>Por qué eso importa para el negocio.</p>
+              </article>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Esta es probablemente la regla más útil de todo el taller.</li>
+              <li>Sirve para revisar cualquier diapositiva, no solo las del pitch deck.</li>
+              <li>Recomendar que la usen después de cada salida generada por IA.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--split" data-slide="14" data-title="Ejemplo">
+          <div class="slide__content split-layout split-layout--balanced">
+            <div>
+              <p class="eyebrow">Ejemplo aplicado</p>
+              <h2>Cómo aterrizar una afirmación</h2>
+              <p class="lead">El objetivo es evitar frases bonitas sin sustento.</p>
+            </div>
+            <div class="triptych triptych--stacked">
+              <article class="triptych__card triptych__card--accent">
+                <h3>Afirmación</h3>
+                <p>El despacho es caótico para operadores pequeños.</p>
+              </article>
+              <article class="triptych__card">
+                <h3>Evidencia</h3>
+                <p>Hoy combinan WhatsApp, llamadas y Excel todos los días.</p>
+              </article>
+              <article class="triptych__card">
+                <h3>Implicación</h3>
+                <p>Hay espacio para una herramienta más simple y enfocada.</p>
+              </article>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Mostrar cómo esta estructura obliga a aterrizar la narrativa.</li>
+              <li>Si la evidencia no existe, la diapositiva sigue siendo débil aunque suene bien.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--dark" data-slide="15" data-title="Actividad">
+          <div class="slide__content split-layout">
+            <div>
+              <p class="eyebrow">Actividad</p>
+              <h2>12–13 minutos de trabajo práctico</h2>
+              <ol class="task-list">
+                <li>Pegar una descripción breve de la startup</li>
+                <li>Generar el outline inicial</li>
+                <li>Detectar 3 diapositivas débiles</li>
+                <li>Mejorarlas con mejor evidencia o wording</li>
+              </ol>
+            </div>
+            <div class="task-card">
+              <div class="timer-badge">12–13 min</div>
+              <h3>Entregable</h3>
+              <p>Un primer outline y una lista clara de vacíos o pruebas faltantes.</p>
+              <div class="task-card__footer">Si alguien se bloquea: cliente → problema → workaround → prueba</div>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Dar entre 12 y 13 minutos.</li>
+              <li>Circular por la sala y ayudar a quienes estén demasiado vagos en sus insumos.</li>
+              <li>Si alguien se bloquea, pedirle que responda quién tiene el problema, qué hace hoy, por qué eso está roto y qué prueba tiene de que importa.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--light" data-slide="16" data-title="Debrief">
+          <div class="slide__content">
+            <div class="section-head">
+              <p class="eyebrow">Debrief</p>
+              <h2>Cómo evaluar lo que salió</h2>
+            </div>
+            <div class="question-grid question-grid--wide">
+              <article class="question-card"><span>?</span><p>¿Qué salió claro?</p></article>
+              <article class="question-card"><span>?</span><p>¿Qué quedó débil?</p></article>
+              <article class="question-card"><span>?</span><p>¿Qué exageró la IA?</p></article>
+              <article class="question-card"><span>?</span><p>¿Qué evidencia falta?</p></article>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Mantener la discusión breve y concreta.</li>
+              <li>Buscar que la conversación gire en torno a evidencia y claridad, no a gustos de estilo.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--hero slide--hero-end" data-slide="17" data-title="Cierre">
+          <div class="slide__content hero hero--end">
+            <div class="hero__copy">
+              <p class="eyebrow eyebrow--accent">Después del taller</p>
+              <h2>Terminen el deck. Validen con clientes. Revisen la tracción.</h2>
+              <ul class="bullet-list">
+                <li>Terminar una primera versión esta semana</li>
+                <li>Validar el problema con conversaciones reales</li>
+                <li>Reescribir tracción usando solo evidencia verificable</li>
+                <li>Pedir una crítica final tipo inversionista escéptico</li>
+              </ul>
+            </div>
+            <div class="closing-statement">
+              <p>La IA acelera.</p>
+              <p>La claridad convence.</p>
+              <p>La evidencia sostiene.</p>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Cerrar con una llamada a la acción clara.</li>
+              <li>Compartir el prompt pack y el resto de materiales.</li>
+              <li>Si aplica, pedir que lleguen a la siguiente sesión con una primera versión del deck.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="slide slide--light" data-slide="18" data-title="Contacto">
+          <div class="slide__content contact-slide">
+            <div class="contact-slide__copy">
+              <p class="eyebrow">Contacto</p>
+              <h2>Ed Mosqueda</h2>
+              <p class="contact-slide__role">
+                Co-Founder of <strong>Codetitlan</strong> and <strong>3erEspacio</strong> · AI expert
+              </p>
+              <div class="contact-slide__highlights">
+                <div class="highlight-pill">+20 años en software</div>
+                <div class="highlight-pill">Firmas internacionales</div>
+                <div class="highlight-pill">IA aplicada a negocio y producto</div>
+              </div>
+              <p class="contact-slide__bio">
+                Ingeniero de software con más de 20 años de experiencia trabajando con firmas internacionales,
+                enfocado en producto, tecnología e inteligencia artificial.
+              </p>
+            </div>
+
+            <div class="contact-slide__qr">
+              <figure class="qr-card">
+                <img src="./qr-ig.png" alt="Código QR para Instagram de Ed Mosqueda" />
+                <figcaption>Instagram</figcaption>
+              </figure>
+              <figure class="qr-card">
+                <img src="./qr-wa.png" alt="Código QR para WhatsApp de Ed Mosqueda" />
+                <figcaption>WhatsApp</figcaption>
+              </figure>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            <h3>Notas del facilitador</h3>
+            <ul>
+              <li>Cerrar invitando a la audiencia a escanear el canal que prefieran.</li>
+              <li>Usar esta slide para abrir conversación, mentoría o seguimiento posterior al taller.</li>
+            </ul>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="deck-controls">
+        <div class="progress" aria-hidden="true">
+          <div class="progress__bar" id="progress-bar"></div>
+        </div>
+        <div class="deck-controls__actions">
+          <button class="nav-button" id="prev-slide" type="button">← Anterior</button>
+          <button class="nav-button nav-button--primary" id="next-slide" type="button">Siguiente →</button>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const slides = [...document.querySelectorAll(".slide")];
+      const counter = document.getElementById("slide-counter");
+      const progressBar = document.getElementById("progress-bar");
+      const notesToggle = document.getElementById("toggle-notes");
+      const body = document.body;
+      let currentSlide = 0;
+
+      function renderSlide(index) {
+        currentSlide = Math.max(0, Math.min(index, slides.length - 1));
+        slides.forEach((slide, slideIndex) => {
+          slide.classList.toggle("is-active", slideIndex === currentSlide);
+        });
+
+        const displayIndex = String(currentSlide + 1).padStart(2, "0");
+        const displayTotal = String(slides.length).padStart(2, "0");
+        counter.textContent = `${displayIndex} / ${displayTotal}`;
+        progressBar.style.width = `${((currentSlide + 1) / slides.length) * 100}%`;
+      }
+
+      document.getElementById("prev-slide").addEventListener("click", () => renderSlide(currentSlide - 1));
+      document.getElementById("next-slide").addEventListener("click", () => renderSlide(currentSlide + 1));
+
+      notesToggle.addEventListener("click", () => {
+        body.classList.toggle("show-notes");
+        notesToggle.textContent = body.classList.contains("show-notes") ? "Notas: visibles" : "Notas: ocultas";
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowRight" || event.key === "PageDown" || event.key === " ") {
+          event.preventDefault();
+          renderSlide(currentSlide + 1);
+        }
+        if (event.key === "ArrowLeft" || event.key === "PageUp") {
+          event.preventDefault();
+          renderSlide(currentSlide - 1);
+        }
+        if (event.key.toLowerCase() === "n") {
+          body.classList.toggle("show-notes");
+          notesToggle.textContent = body.classList.contains("show-notes") ? "Notas: visibles" : "Notas: ocultas";
+        }
+      });
+
+      renderSlide(0);
+    </script>
+  </body>
+</html>
